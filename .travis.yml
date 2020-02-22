@@ -2,7 +2,7 @@ language: go
 go: 1.13.8
 deploy:
   provider: gae
-  keyfile: fitnessdiary-06b50b2c17eb.json
+  keyfile: fitnessdiary-06b50b2c17eb.json.enc
   project: fitnessdiary
 before_install:
 - openssl aes-256-cbc -K $encrypted_42bf725d37a2_key -iv $encrypted_42bf725d37a2_iv
