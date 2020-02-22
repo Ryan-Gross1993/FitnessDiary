@@ -2,7 +2,7 @@ sudo: true
 
 language: go
 
-go: 1.13.8
+go: 1.12.7
 
 deploy:
   provider: gae
