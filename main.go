@@ -22,6 +22,6 @@ func main() {
 		c.String(http.StatusOK, "")
 	})
 
-	log.Printf("Listening on port %s", port)
+	log.Printf("Listening on port %s.", port)
 	r.Run(":" + port)
 }
