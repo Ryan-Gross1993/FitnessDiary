@@ -1,13 +1,27 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"log"
+	"net/http"
+	"os"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	r := gin.Default()
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+		log.Printf("Defaulting to port %s", port)
+	}
+
+	r := gin.New()
+
 	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(200, gin.H{
-			"message": "pong",
-		})
+		c.String(http.StatusOK, "")
 	})
-	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+
+	log.Printf("Listening on port %s", port)
+	r.Run(":" + port)
 }

@@ -1,0 +1,4 @@
+deploy:
+  provider: gae
+  keyfile: "fitnessdiary-06b50b2c17eb.json.enc"
+  project: "fitnessdiary"
