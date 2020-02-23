@@ -7,7 +7,7 @@
 
 # GCP Key
 fitnessdiary-06b50b2c17eb.json
-
+fitnessdiary-269117-d3d5338fdf56.json
 # Test binary, built with `go test -c`
 *.test
 
