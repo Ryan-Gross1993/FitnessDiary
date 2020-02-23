@@ -1,4 +1,5 @@
 sudo: true
+GO111MODULE: off
 
 language: go
 
