@@ -6,9 +6,9 @@ go: 1.12.7
 
 deploy:
   provider: gae
-  skip_cleanup: true
   keyfile: fitnessdiary-06b50b2c17eb.json
   project: fitnessdiary
+  default: true
   on:
     all_branches: true
 
